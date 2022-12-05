@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacé tus cálculos</title>
+    <link rel="icon" type="image/jpg" href="./imagenes/calculadora.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <nav class="navbar navbar-expand-lg bg-primary">
+          <div class="container">
+            <img
+              src="./imagenes/calculadora.png"
+              alt="foto"
+              class="navbar__img"
+            />
+            <a class="navbar-brand me-5" href="./index.html">Calculadora</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Conocer más</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <h1 class="title text-center col-12 mt-3">SUPER CALCULADORA</h1>
+          <h2 class="subtitle text-center col-12">
+            Hacé todos tus cálculos del ámbito que necesites con esta
+            Calculadora.
+          </h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h3>¿Cómo Funciona?</h3>
+          <p class="text">
+            Elegí por consola el número de la operación que quieras realizar.
+            Luego, ingresa la cantidad de números que quieras usar para la
+            operación (Algunas operaciones solo permiten dos o un número). Para
+            finalizar, ingresa los números y la operación será realizada
+            (Números aceptados: Racionales).
+          </p>
+          <ul class="list">
+            <li class="list__items">1) Suma (+)</li>
+            <li class="list__items">2) Resta (-)</li>
+            <li class="list__items">3) Multiplicación (*)</li>
+            <li class="list__items">4) División (/)</li>
+            <li class="list__items">5) Potencia (^)</li>
+            <li class="list__items">6) Factorial (!)</li>
+            <li class="list__items">7) Calculadora de Numeros Primos</li>
+          </ul>
+          <div class="button__text">
+            <button
+              type="button"
+              class="btn btn-primary button__text"
+              onclick="calculadora()"
+            >
+              Comenzar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h3 class="text-center mt-3">Sobre Nosotros</h3>
+          <p class="text mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            magnam maiores illum dolorum modi unde, autem dicta? Autem
+            perferendis quod cupiditate delectus magnam. Voluptatibus natus
+            delectus explicabo provident maxime cum. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Facilis, officia officiis nesciunt
+            quisquam nam illo nobis accusamus distinctio, facere sed minus earum
+            tenetur natus suscipit labore, rem voluptatibus nisi nostrum. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            repudiandae magnam qui excepturi et quasi autem deserunt nihil
+            tempora neque quam, sequi, cumque reprehenderit debitis expedita
+            vero odio ipsa nemo.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-primary text-center text-white">
+      <div class="container p-4 pb-0 margin__top">
+        <section class="mb-4">
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i>Instagram</a
+          >
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i>Twitter</a
+          >
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i>Facebook</a
+          >
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i>Google</a
+          >
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i>YouTube</a
+          >
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i>GitHub</a
+          >
+        </section>
+      </div>
+      <div class="text-center p-3 bg-primary">
+        © 2022:
+        <a class="text-white no__underline" href="#">Calculadora</a>
+      </div>
+    </footer>
+    <script src="./proyecto-prueba.js"></script>
+  </body>
+</html>
