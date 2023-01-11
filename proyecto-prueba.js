@@ -31,12 +31,12 @@ function resultadoLength () {
     }
 }
 
-const themeToggleBtn = document.querySelector(".theme-toggler");
-const calculator = document.querySelector(".calculator");
-const toggleIcon = document.querySelector(".toggler-icon");
-let isDark = true;
-themeToggleBtn.onclick = () => {
-calculator.classList.toggle("dark");
-themeToggleBtn.classList.toggle("active");
-isDark = !isDark;
-}
+const botonCambio = document.querySelector(".theme-toggler");
+const calculadora = document.querySelector(".calculator");
+const alternarIcono = document.querySelector(".toggler-icon");
+let oscuro = true;
+botonCambio.addEventListener("click", function() {
+calculadora.classList.toggle("dark");
+botonCambio.classList.toggle("active");
+oscuro = !oscuro;
+})
