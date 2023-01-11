@@ -66,72 +66,61 @@
         <div class="row">
           <h1 class="title text-center col-12">CALCULADORA</h1>
           <h2 class="subtitle text-center col-12">
-            Hacé todos tus cálculos del ámbito que necesites con esta
+            Hacé tus cálculos que necesites con esta
             Calculadora.
           </h2>
         </div>
       </div>
       <div class="container mt-5">
         <div class="calculator dark">
-          <div class="theme-toggler active">
-            <i class="toggler-icon"></i>
-          </div>
-          <div class="display-screen">
+          <div class="theme-toggler active"></div>
+          <div>
             <div id="display"></div>
           </div>
           <div class="margin">
             <table>
               <tr>
                 <td>
-                  <button class="btn-operator bg-primary" id="reset">C</button>
+                  <button onclick="limpiar()">C</button>
                 </td>
                 <td>
-                  <button class="btn-operator bg-primary" id="/">
-                    &divide;
-                  </button>
+                  <button class="bg-primary" onclick="back()" ><-</button>
                 </td>
                 <td>
-                  <button class="btn-operator bg-primary" id="*">
-                    &times;
-                  </button>
+                  <button class="bg-primary" onclick="insertar('*')">&times;</button>
                 </td>
                 <td>
-                  <button class="btn-operator bg-primary" id="!">
-                    !
-                  </button>
+                  <button class="bg-primary" onclick="insertar('/')">&divide;</button>
                 </td>
               </tr>
               <tr>
-                <td><button class="btn-number" id="7">7</button></td>
-                <td><button class="btn-number" id="8">8</button></td>
-                <td><button class="btn-number" id="9">9</button></td>
+                <td><button onclick="insertar('7')">7</button></td>
+                <td><button onclick="insertar('8')">8</button></td>
+                <td><button onclick="insertar('9')">9</button></td>
                 <td>
-                  <button class="btn-operator bg-primary" id="-">-</button>
+                  <button class="bg-primary" id="-" onclick="insertar('-')">-</button>
                 </td>
               </tr>
               <tr>
-                <td><button class="btn-number" id="4">4</button></td>
-                <td><button class="btn-number" id="5">5</button></td>
-                <td><button class="btn-number" id="6">6</button></td>
+                <td><button onclick="insertar('4')">4</button></td>
+                <td><button onclick="insertar('5')">5</button></td>
+                <td><button onclick="insertar('6')">6</button></td>
                 <td>
-                  <button class="btn-operator bg-primary" id="+">+</button>
+                  <button class="bg-primary" id="+" onclick="insertar('+')">+</button>
                 </td>
               </tr>
               <tr>
-                <td><button class="btn-number" id="1">1</button></td>
-                <td><button class="btn-number" id="2">2</button></td>
-                <td><button class="btn-number" id="3">3</button></td>
+                <td><button onclick="insertar('1')">1</button></td>
+                <td><button onclick="insertar('2')">2</button></td>
+                <td><button onclick="insertar('3')">3</button></td>
                 <td rowspan="2">
-                  <button class="btn-equal" id="equal">=</button>
+                  <button class="boton" id="equal" onclick="calcular()">=</button>
                 </td>
               </tr>
               <tr>
+                <td colspan="2"><button id="cero" onclick="insertar('0')">0</button></td>
                 <td>
-                  <button class="btn-operator bg-primary" id="^">^</button>
-                </td>
-                <td><button class="btn-number" id="0">0</button></td>
-                <td>
-                  <button class="btn-operator bg-primary" id="√">√</button>
+                  <button class="bg-primary" onclick="insertar('.')">.</button>
                 </td>
               </tr>
             </table>
