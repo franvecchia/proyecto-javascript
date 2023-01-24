@@ -53,7 +53,7 @@
                   <a class="nav-link" href="#">Sobre nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Conocer más</a>
+                  <a class="nav-link" href="#">Registrate</a>
                 </li>
               </ul>
             </div>
@@ -66,8 +66,7 @@
         <div class="row">
           <h1 class="title text-center col-12">CALCULADORA</h1>
           <h2 class="subtitle text-center col-12">
-            Hacé tus cálculos que necesites con esta
-            Calculadora.
+            Hacé los cálculos que necesites con esta Calculadora.
           </h2>
         </div>
       </div>
@@ -84,13 +83,17 @@
                   <button onclick="limpiar()">C</button>
                 </td>
                 <td>
-                  <button class="bg-primary" onclick="back()" ><-</button>
+                  <button class="bg-primary" onclick="back()"><-</button>
                 </td>
                 <td>
-                  <button class="bg-primary" onclick="insertar('*')">&times;</button>
+                  <button class="bg-primary" onclick="insertar('*')">
+                    &times;
+                  </button>
                 </td>
                 <td>
-                  <button class="bg-primary" onclick="insertar('/')">&divide;</button>
+                  <button class="bg-primary" onclick="insertar('/')">
+                    &divide;
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -98,7 +101,9 @@
                 <td><button onclick="insertar('8')">8</button></td>
                 <td><button onclick="insertar('9')">9</button></td>
                 <td>
-                  <button class="bg-primary" id="-" onclick="insertar('-')">-</button>
+                  <button class="bg-primary" id="-" onclick="insertar('-')">
+                    -
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -106,7 +111,9 @@
                 <td><button onclick="insertar('5')">5</button></td>
                 <td><button onclick="insertar('6')">6</button></td>
                 <td>
-                  <button class="bg-primary" id="+" onclick="insertar('+')">+</button>
+                  <button class="bg-primary" id="+" onclick="insertar('+')">
+                    +
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -114,11 +121,15 @@
                 <td><button onclick="insertar('2')">2</button></td>
                 <td><button onclick="insertar('3')">3</button></td>
                 <td rowspan="2">
-                  <button class="boton" id="equal" onclick="calcular()">=</button>
+                  <button class="boton" id="equal" onclick="calcular()">
+                    =
+                  </button>
                 </td>
               </tr>
               <tr>
-                <td colspan="2"><button id="cero" onclick="insertar('0')">0</button></td>
+                <td colspan="2">
+                  <button id="cero" onclick="insertar('0')">0</button>
+                </td>
                 <td>
                   <button class="bg-primary" onclick="insertar('.')">.</button>
                 </td>
@@ -126,6 +137,23 @@
             </table>
           </div>
         </div>
+      </div>
+      <div class="container p-3 mt-5 rounded">
+        <h3 class="text-center mt-5">Usuarios registrados</h3>
+        <p class="text text-center">
+          Estos son nuestros últimos usuarios registrados, ¿Qué esperás para ser
+          el próximo?
+        </p>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr class="user-table">
+              <th>Número</th>
+              <th>Nombre</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="data"></tbody>
+        </table>
       </div>
       <div class="container">
         <div class="row">

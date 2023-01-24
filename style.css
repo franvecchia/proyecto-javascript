@@ -146,3 +146,7 @@ button#cero {
     background-color: #fff;
     color: #071115;
 }
+
+.user-table {
+    border: 2px solid black;
+}
