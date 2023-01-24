@@ -22,6 +22,13 @@ function calcular () {
     }
 }
 
+let porcentaje = document.getElementById("percentage");
+porcentaje.addEventListener("click", () => {
+    resultado = document.getElementById("display").innerHTML;
+    document.getElementById("display").innerHTML = resultado / 100;
+
+})
+
 function resultadoLength () {
     resultado = JSON.stringify(resultado);
 
